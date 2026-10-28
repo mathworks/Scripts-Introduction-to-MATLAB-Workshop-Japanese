@@ -1,6 +1,7 @@
 %% 2002年から2007年の停電データの読み取り
 % (1) 「エディター」タブにある「セクションを実行」をクリックします。
 clc; clear; close all
+fileName = "outages_data_2002to2007.csv";
 opts = detectImportOptions(fileName);
 opts.VariableTypes(2) = {'string'};
 opts.VariableTypes(5) = {'string'};
